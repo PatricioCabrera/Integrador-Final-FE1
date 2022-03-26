@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+h1{
+    font-size: 5.8rem;
+}
+
+h1, h2, h3{
+    color: #232C50;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+a{
+    list-style: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7.5rem;
+}
+
+header img{
+    width: 145px;
+    height: 24px;
+}
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    list-style: none;
+    padding-left: 2.8rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+}
+
+ul li a{
+    font-size: 1.3rem;
+    color: #242E52;
+}
+
+.btn{
+    padding: 1.25rem 3.05rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    background-color: #F3603B;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    width: fit-content;
+    height: fit-content;
+}
+
+section{
+    padding-top: 10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+section p{
+    font-size: 1.6rem;
+}
+
+.section1{
+    align-items: center;
+}
+
+.section1 div{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 2.8rem;
+}
+
+.section1 div h1, .section1 div p{
+    width: 470px;
+    text-align:left;
+}
