@@ -104,6 +104,13 @@ section{
     align-items: center;
 }
 
+section .background-1{
+    position: absolute;
+    z-index: -1;
+    right: -150px;
+    top: -150px;
+}
+
 section p{
     font-size: 1.6rem;
 }
@@ -158,6 +165,13 @@ section .gap-0{
 
 .direction-row{
     flex-direction: row;
+}
+
+section .background-2{
+    position: absolute;
+    z-index: -1;
+    left: -550px;
+    top: 1100px;
 }
 
 .card-container{
@@ -454,6 +468,10 @@ footer .mobileNav{
     .mobile-copy, .logoSocial-container, .bottom-footer nav, .bottom-footer div{
         padding-top: 2rem;
         padding-bottom: 2rem;
+    }
+
+    section .background-1, section .background-2{
+        display: none;
     }
 
 }
