@@ -47,6 +47,10 @@ header{
     margin: 0 auto;
 }
 
+header .fa-bars{
+    display: none;
+}
+
 header img{
     width: 145px;
     height: 24px;
@@ -65,6 +69,11 @@ header nav ul li a{
     text-decoration: none;
 }
 
+header nav ul li a:hover{
+    color: #909abb;
+    transition: color 0.2s;
+}
+
 ul li a{
     font-size: 1.3rem;
     color: #242E52;
@@ -81,6 +90,11 @@ ul li a{
     width: fit-content;
     height: fit-content;
     box-shadow: 0px 4px 8px rgba(243, 96, 59, 0.5);
+}
+
+.btn:hover{
+    background-color: #f5b1a0;
+    transition: background-color 0.2s;
 }
 
 section{
@@ -128,6 +142,10 @@ section div article span{
     padding: 1rem 2.5rem;
     height: fit-content;
     margin-right: 2.3rem;
+}
+
+section div article div span{
+    display: none;
 }
 
 section .gap-0{
@@ -188,6 +206,12 @@ section .card p{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
+.btn--white:hover{
+    transition: color 0.2s;
+    color: #eebaad;
+    background-color: #ffd8bf;
+}
+
 .top-footer{
     margin-top: 18rem;
     height: 224px;
@@ -199,7 +223,237 @@ section .card p{
     margin: 0;
 }
 
-.bottom-footer .social-container img{
-    height: 20px;
-    width: 20px;
+.bottom-footer{
+    padding-top: 6.7rem;
+    background-color: #1E1E26;
+    color: white;
+    justify-content: space-between;
+    padding-left: 165px;
+    padding-right: 165px;
+    padding-bottom: 50px;
+}
+
+.bottom-footer div{
+    width: auto;
+}
+
+.bottom-footer nav ul{
+    list-style: none;
+}
+
+.bottom-footer nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.bottom-footer nav ul li a:hover{
+    color:#F3613C;
+}
+
+.bottom-footer .footer-logo{
+    width: 120px;
+}
+
+.bottom-footer .social-container .fa-brands{
+    display: inline-block;
+    font-size: 1.6rem;
+    color: white;
+    cursor: pointer;
+}
+
+.bottom-footer .social-container .fa-brands:hover{
+    color: #F3613C;
+}
+
+.bottom-footer .social-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.bottom-footer div:last-child div{
+    display: flex;
+    flex-direction: row;
+}
+
+.bottom-footer div:last-child p{
+    width: fit-content;
+}
+
+.bottom-footer div:last-child div input{
+    width: 201px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    padding-left: 1rem;
+}
+
+footer .mobile-copy{
+    display: none;
+}
+
+footer .mobileNav{
+    display: none;
+}
+
+@media screen and (max-width: 480px) {
+
+    html{
+        overflow-x: hidden;
+    }
+
+    header{
+        padding-top: 3.5rem;
+        padding: 3.5rem 2rem 0 2rem;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header a{
+        display: none;
+    }
+
+    header .fa-bars{
+        display: inline-block;
+        font-size: 2.4rem;
+        cursor: pointer;
+    }
+
+    main{
+        max-width: 480px;
+    }
+
+    section{
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 5rem 2rem;
+    }
+
+    p{
+        color: #B9B9C1;
+    }
+
+    section div{
+        align-items: center;
+    }
+
+    section div h1{
+        width: auto;
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    section div p{
+        width: auto;
+    }
+
+    section h2{
+        margin-bottom: 1.6rem;
+    }
+
+    section div{
+        flex-wrap: wrap;
+        width: auto;
+        text-align: center;
+    }
+
+    section:first-child{
+        flex-direction: column-reverse;
+    }
+
+    section:first-child img{
+        width: 90vw;
+    }
+
+    section div article div{
+        align-items: baseline;
+    }
+
+    section div article span{
+        display: none
+    }
+
+    section div article div span{
+        display: inline-block;
+    }
+
+    .bottom-footer{
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .card-container{
+        margin-bottom: 3rem;
+    }
+
+    .card-container .card:last-child, .card-container .card:nth-child(2){
+        display: none;
+    }
+
+    footer .top-footer{
+        margin: 0;
+        height: auto;
+        flex-direction: column;
+        padding: 7rem 3rem;
+    }
+
+    footer .top-footer h2{
+        width: 70%;
+        font-size: 3.2rem;
+        padding-bottom: 2rem;
+    }
+
+    footer .bottom-footer{
+        flex-direction: column-reverse;
+    }
+
+    footer .bottom-footer .social-container .fa-brands{
+        font-size: 4rem;
+        padding-right: 2rem;
+    }
+
+    /* footer .bottom-footer div:first-child{
+        flex-direction: row;
+    } */
+
+    footer .bottom-footer div:last-child{
+        flex-direction: column-reverse;
+    }
+
+    footer .bottom-footer div .social-container{
+        flex-direction: row;
+    }
+
+    footer .bottom-footer div input{
+        height: 3.9rem;
+    }
+
+    footer .bottom-footer div:last-child p{
+        display: none;
+    }
+
+    .logoSocial-container{
+        flex-direction: column-reverse;
+    }
+
+    footer .mobile-copy{
+        display: flex;
+    }
+
+    footer nav{
+        display: none;
+    }
+
+    footer .mobileNav{
+        display: flex;
+    }
+
+    .mobile-copy, .logoSocial-container, .bottom-footer nav, .bottom-footer div{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
 }
